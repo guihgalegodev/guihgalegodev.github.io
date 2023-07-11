@@ -1,0 +1,159 @@
+.curriculo {
+  max-width: 1200px;
+  margin: 1.25rem auto;
+  padding: 0.625rem 1.25rem;
+}
+
+.curriculo-pic {
+  width: 200px;
+}
+
+.sobre {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 1.25rem;
+  align-items: center;
+
+  animation-name: sobre-curriculo-anima;
+  animation-duration: 2s;
+}
+
+.sobre-mim {
+  padding: 15px;
+}
+
+.sobre-mim h2 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  padding-bottom: 10px;
+}
+
+.sobre p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #edf1f7;
+  max-width: 65ch;
+  margin-bottom: 20px;
+}
+
+.h2-curriculo {
+  font-size: 2rem;
+  padding-bottom: 20px;
+  color: var(--primary-color);
+}
+
+.experiencia,
+.infos-pessoais,
+.cursos {
+  margin-top: 10px;
+  max-width: 50%;
+  animation-name: sections-curriculo-anima;
+  animation-duration: 2s;
+}
+
+.curriculo-list li {
+  padding-bottom: 25px;
+}
+
+.curriculo-list h4 {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.curriculo-list p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #edf1f7;
+}
+
+.data {
+  color: #edf1f7;
+}
+
+.tec {
+  margin-left: 10px;
+}
+
+.tec li {
+  font-size: 1.2rem;
+  padding-bottom: 10px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.tec li::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: var(--primary-color);
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+@media (max-width: 900px) {
+  .sobre {
+    align-items: start;
+  }
+
+  .curriculo-pic {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .sobre {
+    grid-template-columns: 1fr;
+    gap: 1.45rem;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .curriculo-pic img {
+    border-radius: 50%;
+  }
+
+  .sobre-mim {
+    padding: 0px;
+  }
+
+  .sobre-mim h2 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+  .sobre-mim p {
+    max-width: 80ch;
+    color: var(--secundary-color);
+  }
+
+  .h2-curriculo {
+    font-size: 1.7rem;
+  }
+
+  .experiencia {
+    max-width: 80%;
+  }
+
+  .curriculo-list h4 {
+    font-size: 1.2rem;
+    min-width: 130px;
+  }
+}
+
+@media (max-width: 400px) {
+  .tec li {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .tec li {
+    list-style: circle;
+  }
+
+  .tec li::before {
+    display: none;
+  }
+}

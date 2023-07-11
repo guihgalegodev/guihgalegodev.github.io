@@ -1,0 +1,36 @@
+:root {
+  /* --primary-color: #33d463; */
+  --primary-color: #f8f81f;
+  --secundary-color: #d6d6d6;
+  --menu-mb-color: #2d2d2d;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Fira Sans", Arial, sans-serif;
+  background-color: black;
+  color: white;
+  height: 100vh;
+}
+
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: var(--secundary-color);
+  display: block;
+}

@@ -1,0 +1,63 @@
+.container-contatos {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 60px;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  text-align: left;
+
+  animation-name: sobre-curriculo-anima;
+  animation-duration: 2s;
+}
+
+.container-contatos h1 {
+  color: var(--primary-color);
+  grid-column: 1 / -1;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+
+.container-contatos .img-contato {
+  border-radius: 4px;
+  justify-self: center;
+}
+
+.lista-contatos a {
+  margin-bottom: 40px;
+  font-size: 1.5rem;
+  max-width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.lista-contatos a:hover {
+  color: var(--primary-color);
+  transition: 0.4s;
+}
+
+@media (max-width: 800px) {
+  .container-contatos .img-contato {
+    display: none;
+  }
+
+  .container-contatos h1 {
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 400px) {
+  .container-contatos h1 {
+    margin-left: -40px;
+    white-space: nowrap;
+    margin-bottom: 40px;
+    font-size: 2.3rem;
+  }
+
+  .lista-contatos {
+    margin-left: -40px;
+  }
+}
