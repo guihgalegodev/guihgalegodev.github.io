@@ -1,7 +1,7 @@
-@import "global.css";
-@import "header.css";
-@import "home.css";
-@import "curriculo.css";
-@import "projetos.css";
-@import "contato.css";
-@import "animations.css";
+@import "./global.css";
+@import "./header.css";
+@import "./home.css";
+@import "./curriculo.css";
+@import "./projetos.css";
+@import "./contato.css";
+@import "./animations.css";
