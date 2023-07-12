@@ -98,6 +98,10 @@
     visibility: visible;
   }
 
+  #header-menu a::after {
+    display: none;
+  }
+
   #btn-mobile {
     display: flex;
     padding: 5px 15px;

@@ -27,16 +27,22 @@
 
 .lista-contatos a {
   margin-bottom: 40px;
-  font-size: 1.5rem;
   max-width: fit-content;
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.lista-contatos a:hover {
-  color: var(--primary-color);
-  transition: 0.4s;
+.lista-contatos a p {
+  color: var(--secundary-color);
+  font-size: 1.5rem;
+}
+
+@media (hover: hover) {
+  .lista-contatos a p:hover {
+    color: var(--primary-color);
+    transition: 0.4s;
+  }
 }
 
 @media (max-width: 800px) {
@@ -54,7 +60,11 @@
     margin-left: -40px;
     white-space: nowrap;
     margin-bottom: 40px;
-    font-size: 2.3rem;
+    font-size: 2rem;
+  }
+
+  .lista-contatos a p {
+    font-size: 1.285rem;
   }
 
   .lista-contatos {
