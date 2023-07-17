@@ -13,7 +13,7 @@
 
   <header id="header-bg">
     <div id="header">
-      <nav id="nav">
+      <nav>
         <button id="btn-mobile">
           <span id="hamburguer"></span>
         </button>
@@ -39,9 +39,9 @@
     </section>
     <hr>
 
-    <section class="infos-pessoais">
+    <section class="infos-pessoais" data-section="content" data-anima="show-right">
       <h2 class="h2-curriculo">Informações Pessoais</h2>
-      <ul class="curriculo-list">
+      <ul class="curriculo-list" data-anima="right">
         <li>
           <h4>Data-Nascimento</h4>
           <p>11/05/1996</p>
@@ -57,9 +57,9 @@
       </ul>
     </section>
     <hr>
-    <section class="experiencia">
+    <section class="experiencia" data-section="content" data-anima="show-right">
       <h2 class="h2-curriculo">Experiencia de trabalho</h2>
-      <ul class="curriculo-list">
+      <ul class="curriculo-list" data-anima="right">
         <li>
           <span class="data">2015 / 2017</span class="data">
           <h4>Empresa 1</h4>
@@ -79,8 +79,8 @@
 
     </section>
     <hr>
-    <section class="cursos">
-      <h2 class="h2-curriculo">Cursos</h2>
+    <section class="cursos" data-section="content" data-anima="show-right">
+      <h2 class="h2-curriculo" data-anima="right">Cursos</h2>
       <ul class="curriculo-list">
         <li>
           <h4>Origamid</h4>
@@ -107,5 +107,6 @@
     </section>
   </div>
 
-  <script type="text/javascript" src="./js/index.js"></script>
+  <script type="module" src="./js/index.js"></script>
+
 </body>

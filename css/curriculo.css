@@ -15,7 +15,7 @@
   align-items: center;
 
   animation-name: sobre-curriculo-anima;
-  animation-duration: 2s;
+  animation-duration: 0.6s;
 }
 
 .sobre-mim {
@@ -47,8 +47,6 @@
 .cursos {
   margin-top: 10px;
   max-width: 50%;
-  animation-name: sections-curriculo-anima;
-  animation-duration: 2s;
 }
 
 .curriculo-list li {
@@ -65,6 +63,14 @@
   font-size: 1.1rem;
   line-height: 1.5;
   color: #edf1f7;
+}
+
+[data-section="content"] {
+  opacity: 0;
+}
+
+[data-section="content"].ativo.show-right {
+  animation: show-right 0.6s forwards;
 }
 
 .data {

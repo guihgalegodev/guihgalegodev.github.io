@@ -93,7 +93,7 @@
     transition: 0.1s;
   }
 
-  #nav.active #header-menu {
+  nav.active #header-menu {
     height: calc(100vh - 55vh);
     visibility: visible;
   }
@@ -130,15 +130,15 @@
     position: relative;
   }
 
-  #nav.active #hamburguer {
+  nav.active #hamburguer {
     border-top-color: transparent;
   }
 
-  #nav.active #hamburguer::before {
+  nav.active #hamburguer::before {
     transform: rotate(135deg);
   }
 
-  #nav.active #hamburguer::after {
+  nav.active #hamburguer::after {
     transform: rotate(-135deg);
     top: -7px;
   }

@@ -1,42 +1,53 @@
 @keyframes home-anima-pic {
-  0% {
+  from {
     opacity: 0;
     transform: translate(0px, 20px);
   }
-  100% {
+  to {
     opacity: 1;
     transform: translate(0px, 0px);
   }
 }
 
 @keyframes home-anima-name {
-  0% {
+  from {
     opacity: 0;
     transform: translate(0px, -20px);
   }
-  100% {
+  to {
     opacity: 1;
     transform: translate(0px, 0px);
   }
 }
 
 @keyframes sobre-curriculo-anima {
-  0% {
+  from {
     opacity: 0;
-    transform: translate(-20px, 0px);
+    transform: translate3d(-50px, 0, 0);
   }
-  100% {
+  to {
     opacity: 1;
-    transform: translate(0px, 0px);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes show-right {
+  from {
+    opacity: 0;
+    transform: translate3d(-50px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
   }
 }
 
 @keyframes sections-curriculo-anima {
-  0% {
+  from {
     opacity: 0;
     transform: translate(0px, 20px);
   }
-  100% {
+  to {
     opacity: 1;
     transform: translate(0px, 0px);
   }
