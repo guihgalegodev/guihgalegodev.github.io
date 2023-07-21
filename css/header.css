@@ -23,6 +23,7 @@
 
 #header-menu a {
   display: block;
+  max-width: max-content;
   color: white;
   font-size: 1.25rem;
   padding: 16px 0;

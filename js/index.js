@@ -1,8 +1,8 @@
 import initMenuMobile from "./modules/menu-mobile.js";
-import initAnimaScroll from "./modules/anima-scroll.js";
+import initContentFecth from "./modules/content-fetch.js";
 
-initMenuMobile()
-initAnimaScroll()
+initMenuMobile();
+initContentFecth();
 
 
 
