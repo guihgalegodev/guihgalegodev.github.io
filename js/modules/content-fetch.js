@@ -1,6 +1,5 @@
+import { links } from "./links.js";
 export default function initContentFecth() {
-  const links = document.querySelectorAll("#header-menu a");
-
   function handleClick(e) {
     e.preventDefault();
 
@@ -35,6 +34,9 @@ export default function initContentFecth() {
     fetchPage(window.location.href);
   });
 
+  if (window.location.href.includes("curriculo")) {
+    fetchPage(window.location.href);
+  }
   function initAnimaScroll() {
     const sections = document.querySelectorAll(
       ".content [data-section='content-info']"
@@ -57,9 +59,6 @@ export default function initContentFecth() {
 
       window.addEventListener("scroll", animaScroll);
     }
-  }
-  if (window.location.href.includes("curriculo")) {
-    fetchPage(window.location.href);
   }
 
   links.forEach((link) => {

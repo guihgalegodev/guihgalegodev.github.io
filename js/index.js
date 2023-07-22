@@ -3,7 +3,3 @@ import initContentFecth from "./modules/content-fetch.js";
 
 initMenuMobile();
 initContentFecth();
-
-
-
-
