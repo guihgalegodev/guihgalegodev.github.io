@@ -9,6 +9,7 @@ export default function initContentFecth() {
   }
 
   async function fetchPage(url) {
+    // document.querySelector(".content").innerHTML = "Carregando";
     const pageResponse = await fetch(url);
     const pageText = await pageResponse.text();
     replaceContent(pageText);
@@ -21,6 +22,10 @@ export default function initContentFecth() {
 
     const oldContent = document.querySelector(".content");
     const newContent = newHtml.querySelector(".content");
+    if (window.location.href.includes("curriculo")) {
+      const sobreCurriculo = newHtml.querySelector(".content .sobre");
+      sobreCurriculo.style.display = "grid";
+    }
 
     oldContent.innerHTML = newContent.innerHTML;
     document.title = newHtml.querySelector("title").innerText;
@@ -52,6 +57,9 @@ export default function initContentFecth() {
 
       window.addEventListener("scroll", animaScroll);
     }
+  }
+  if (window.location.href.includes("curriculo")) {
+    fetchPage(window.location.href);
   }
 
   links.forEach((link) => {

@@ -9,7 +9,7 @@
 }
 
 .sobre {
-  display: grid;
+  display: none;
   grid-template-columns: 1fr 4fr;
   gap: 1.25rem;
   align-items: center;
@@ -45,7 +45,7 @@
 .experiencia,
 .infos-pessoais,
 .cursos {
-  margin-top: 10px;
+  margin-top: 20px;
   max-width: 50%;
 }
 
