@@ -12,6 +12,7 @@ export default function initContentFecth() {
     const pageResponse = await fetch(url);
     const pageText = await pageResponse.text();
     replaceContent(pageText);
+    linkAtivo(url);
     initAnimaScroll();
   }
 
@@ -67,11 +68,12 @@ export default function initContentFecth() {
   });
 }
 
-// function linkAtivo(link) {
-//   const url = location.href;
-//   const href = link.href;
-//   if (url.includes(href)) {
-//     link.classList.toggle("ativo");
-//   }
-// }
-// links.forEach(linkAtivo);
+function linkAtivo(urlAtual) {
+  links.forEach((link) => {
+    link.classList.remove("ativo");
+    const href = link.getAttribute("href");
+    if (urlAtual.includes(href)) {
+      link.classList.add("ativo");
+    }
+  });
+}
