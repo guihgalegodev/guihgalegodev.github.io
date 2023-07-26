@@ -1,8 +1,7 @@
-
 .container-projetos {
   max-width: 1200px;
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 70px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
