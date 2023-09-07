@@ -35,9 +35,13 @@ export default function initContentFecth() {
     fetchPage(window.location.href);
   });
 
-  if (window.location.href.includes("curriculo")) {
+  if (
+    window.location.href.includes("curriculo") ||
+    window.location.href.includes("projetos")
+  ) {
     fetchPage(window.location.href);
   }
+
   function initAnimaScroll() {
     const sections = document.querySelectorAll(
       ".content [data-section='content-info']"

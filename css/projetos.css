@@ -10,14 +10,16 @@
   padding: 60px;
   position: relative;
 
-  animation-name: sobre-curriculo-anima;
-  animation-duration: 2s;
+  /* animation-name: sobre-curriculo-anima;
+  animation-duration: 2s; */
 }
 
 .projeto {
   display: flex;
   flex-direction: column;
   gap: 10px;
+
+  /* animation: show-right 2s forwards; */
 }
 
 .projetos-caixa {
