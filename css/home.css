@@ -80,6 +80,10 @@
 }
 
 @media (max-width: 620px) {
+  .content-home-nome-func {
+    margin-top: -180px;
+  }
+
   .content-home-pic {
     width: 12.625rem;
   }
@@ -95,6 +99,10 @@
 }
 
 @media (max-width: 360px) {
+  .content-home-nome-func {
+    margin-top: -30px;
+  }
+
   .content-home-pic {
     width: 11rem;
     align-self: center;

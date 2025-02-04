@@ -55,6 +55,7 @@ hr {
   cursor: pointer;
 }
 .black-box-text {
+  width: 260px;
   font-size: 0.7rem;
   text-align: center;
 }

@@ -1,4 +1,5 @@
-import { links } from "./links.js";
+import { links } from "./links.js"; //Importando os links que estão separados em outro documento
+
 export default function initContentFecth() {
   function handleClick(e) {
     e.preventDefault();
@@ -9,6 +10,9 @@ export default function initContentFecth() {
 
   async function fetchPage(url) {
     // document.querySelector(".content").innerHTML = "Carregando";
+    window.scrollTo({
+      top: 0,
+    });
     const pageResponse = await fetch(url);
     const pageText = await pageResponse.text();
     replaceContent(pageText);
@@ -48,7 +52,7 @@ export default function initContentFecth() {
     );
 
     if (sections.length) {
-      const windowMetade = window.innerHeight * 0.6;
+      const windowMetade = window.innerHeight * 0.7;
 
       function animaScroll() {
         sections.forEach((section) => {
