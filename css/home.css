@@ -18,12 +18,12 @@
 
 .content-home-nome-func::after {
   content: "";
-  width: 400px;
+  width: 405px;
   height: 8px;
   background-color: var(--primary-color);
   position: absolute;
   bottom: -15px;
-  left: 40px;
+  left: 25px;
   z-index: -1;
 }
 
@@ -98,7 +98,7 @@
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 400px) {
   .content-home-nome-func {
     margin-top: -30px;
   }
