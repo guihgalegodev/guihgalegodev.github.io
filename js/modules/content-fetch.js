@@ -1,5 +1,5 @@
 import { links } from "./links.js"; //Importando os links que estão separados em outro documento
-
+import AnimaScroll from "./anima-scroll.js";
 export default function initContentFecth() {
   function handleClick(e) {
     e.preventDefault();
@@ -17,7 +17,11 @@ export default function initContentFecth() {
     const pageText = await pageResponse.text();
     replaceContent(pageText);
     linkAtivo(url);
-    initAnimaScroll();
+
+    const animaScroll = new AnimaScroll(
+      ".content [data-section='content-info']",
+    );
+    animaScroll.init();
   }
 
   function replaceContent(newText) {
@@ -44,30 +48,6 @@ export default function initContentFecth() {
     window.location.href.includes("projetos")
   ) {
     fetchPage(window.location.href);
-  }
-
-  function initAnimaScroll() {
-    const sections = document.querySelectorAll(
-      ".content [data-section='content-info']"
-    );
-
-    if (sections.length) {
-      const windowMetade = window.innerHeight * 0.7;
-
-      function animaScroll() {
-        sections.forEach((section) => {
-          const sectionTop = section.getBoundingClientRect().top;
-          const isSectionVisible = sectionTop - windowMetade < 0;
-          const direcao = section.dataset.anima;
-          if (isSectionVisible) {
-            section.classList.add("ativo", direcao);
-          }
-        });
-      }
-      animaScroll();
-
-      window.addEventListener("scroll", animaScroll);
-    }
   }
 
   links.forEach((link) => {

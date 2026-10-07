@@ -1,5 +1,7 @@
-import initMenuMobile from "./modules/menu-mobile.js";
+import MenuMobile from "./modules/menu-mobile.js";
 import initContentFecth from "./modules/content-fetch.js";
 
-initMenuMobile();
+const menuMobile = new MenuMobile("btn-mobile", "nav", "header");
+menuMobile.init();
+
 initContentFecth();
