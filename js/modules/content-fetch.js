@@ -58,7 +58,6 @@ export default class ContentFecth {
   }
 
   handlePopstate() {
-    // this.fetchPage(window.location.href);
     this.checkUrl(window.location.href);
   }
 
@@ -83,7 +82,6 @@ export default class ContentFecth {
 
   init() {
     if (this.url) {
-      // this.fetchPage(this.url);
       this.checkUrl(this.url);
       this.addEvents();
     }
