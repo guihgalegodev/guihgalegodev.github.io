@@ -12,6 +12,7 @@ export default class ContentFecth {
 
   checkUrl(currentUrl) {
     if (currentUrl.endsWith(".io") && !currentUrl.includes(".html")) {
+      console.log(currentUrl);
       currentUrl += "/index.html";
     }
   }
