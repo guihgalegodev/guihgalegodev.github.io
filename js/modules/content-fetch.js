@@ -12,9 +12,10 @@ export default class ContentFecth {
 
   checkUrl(currentUrl) {
     console.log(currentUrl);
-    if (currentUrl.endsWith(".io") && !currentUrl.includes(".html")) {
-      currentUrl += "/index.html";
+    if (currentUrl.endsWith(".io/") && !currentUrl.includes(".html")) {
+      currentUrl += "index.html";
     }
+    this.fetchPage(currentUrl);
   }
 
   handleClick(e) {
@@ -57,7 +58,7 @@ export default class ContentFecth {
   }
 
   handlePopstate() {
-    this.fetchPage(window.location.href);
+    // this.fetchPage(window.location.href);
     this.checkUrl(window.location.href);
   }
 
@@ -82,7 +83,7 @@ export default class ContentFecth {
 
   init() {
     if (this.url) {
-      this.fetchPage(this.url);
+      // this.fetchPage(this.url);
       this.checkUrl(this.url);
       this.addEvents();
     }
